@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ //위의 형태가 component를 사용하고자 할때 component상태이다. 
+ // 위와같은 JS와 HTML의 조합을 JSX라고 부른다. 
+ // JSX는 인접요소 X 위 component에서는 App이기 때문에 newComponent를 App에 import해야함.
+ // 현재는 2개의 컴포넌트도 rendering이 된다.
