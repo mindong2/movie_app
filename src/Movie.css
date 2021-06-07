@@ -79,7 +79,6 @@
   font-size: 1rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.3);
-  overflow-x: hidden;
 }
 
 .movie__genres:first-child {
@@ -97,15 +96,15 @@
 
 @media screen and (max-width: 500px) {
   .movies {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .movie {
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
-    width: 450px;
+    min-width: 450px;
     min-height: 500px;
   }
 
@@ -124,8 +123,29 @@
   }
 
   .movie__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px 10px 20px 10px;
     width: 100%;
+  }
+
+  .movie__title {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .movie__genres {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+  }
+
+  .movie__summary {
+    padding: 30px 50px;
+    font-size: 1.2rem;
+    color: #fff;
   }
 }
 
